@@ -1,5 +1,6 @@
 require "botcore/version"
-require "botore/dust_calender"
+require "botcore/dust_calender"
+
 
 module Botcore
   # Your code goes here...
