@@ -20,14 +20,14 @@ module Botcore
         when 0
           tomorrow_schedule << '明日は燃えるゴミの日'
         when 2
-          if (@today_weeknumber == 1 || @today_weeknumber == 3)
+          if (@tomorrow_weeknumber == 1 || @tomorrow_weeknumber == 3)
             tomorrow_schedule << '明日はかん・びんの日'
-          elsif (@today_weeknumber == 2 || @today_weeknumber == 4)
+          elsif (@tomorrow_weeknumber == 2 || @tomorrow_weeknumber == 4)
             tomorrow_schedule << '明日は不燃、危険、大型ゴミの日'
           end
         when 3
           tomorrow_schedule << '明日は燃えるゴミの日'
-          if (@today_weeknumber == 1 || @today_weeknumber == 3)
+          if (@tomorrow_weeknumber == 1 || @tomorrow_weeknumber == 3)
             tomorrow_schedule << '明日は古着・ダンボールの日'
           end
         end
@@ -40,14 +40,14 @@ module Botcore
         when 1
           today_schedule << '今日は燃えるゴミの日'
         when 3
-          if (@tomorrow_weeknumber == 1 || @tomorrow_weeknumber == 3)
+          if (@today_weeknumber == 1 || @today_weeknumber == 3)
             today_schedule << '今日はかん・びんの日'
-          elsif (@tomorrow_weeknumber == 2 || @tomorrow_weeknumber == 4)
+          elsif (@today_weeknumber == 2 || @today_weeknumber == 4)
             today_schedule << '今日は不燃、危険、大型ゴミの日'
           end
         when 4
           today_schedule << '今日は燃えるゴミの日'
-          if (@tomorrow_weeknumber == 1 || @tomorrow_weeknumber == 3)
+          if (@today_weeknumber == 1 || @today_weeknumber == 3)
             today_schedule << '今日は古着・ダンボールの日'
           end
         end
