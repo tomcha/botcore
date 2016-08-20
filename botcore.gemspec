@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["tomcha"]
   spec.email         = ["tomcha@tomcha.net"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Bot progoram core application}
+  spec.description   = %q{Bot progoram core application}
+  spec.homepage      = "http://tomcha.net"
   spec.license       = "MIT"
 
   spec.add_development_dependency "rspec"
