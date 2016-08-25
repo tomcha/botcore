@@ -3,7 +3,7 @@ require 'botcore/sakenote_api'
 
 describe 'SakenoteApi' do
   before :all do
-    @sna = Botcore::SakenoteApi.new
+    @sna = Botcore::Sakenote.new
   end
 
   describe '初期化もろもろ' do

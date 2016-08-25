@@ -1,12 +1,12 @@
 require 'spec_helper'
-require 'botcore/todofuken'
+require 'botcore/sakenote_api/todofuken'
 
 describe 'Tofofuken' do
   before :each do
-    @tf = Botcore::Todofuken.new
+    @tf = Botcore::SakenoteApi::Todofuken.new
   end
 
-  describe 'a' do
+  describe 'Botcore::SakenoteApi::Todofuken' do
     it 'インスタンスを生成できる' do
       expect(@tf).not_to be_nil
     end

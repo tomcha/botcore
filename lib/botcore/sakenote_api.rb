@@ -1,11 +1,11 @@
-require 'botcore/todofuken'
+require 'botcore/sakenote_api/todofuken'
 require 'net/http'
 require 'uri'
 require 'openssl'
 require 'json'
 
 module Botcore
-  class SakenoteApi
+  class Sakenote
     @apitoken
     def initialize
       File.open('config.txt') do |f|
@@ -26,7 +26,7 @@ module Botcore
       if place =~ /(.+)(都|道|府|県)/
         place = $1
       end
-      tf = Botcore::Todofuken.new
+      tf = Botcore::SakenoteApi::Todofuken.new
       prefecture_code = tf.get_fukennum(place)
       url_text = 'https://www.sakenote.com/api/v1/sakes'
       uri = URI.parse(url_text)
