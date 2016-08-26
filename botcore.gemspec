@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Bot progoram core application}
   spec.description   = %q{Bot progoram core application}
-  spec.homepage      = "http://tomcha.net"
+  spec.homepage      = "https://github.com/tomcha/botcore"
   spec.license       = "MIT"
 
   spec.add_development_dependency "rspec"
